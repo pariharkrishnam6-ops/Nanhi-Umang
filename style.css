@@ -1,0 +1,171 @@
+/* Nanhi Umang - Website Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8fbf8;
+    color: #263b32;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: #145c43;
+    color: white;
+    padding: 18px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav h2 {
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f7d774;
+}
+
+/* Home Section */
+.hero {
+    min-height: 450px;
+    background: linear-gradient(120deg, #145c43, #4a9b70);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #f7d774;
+    color: #263b32;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: #ffebaa;
+}
+
+/* General Sections */
+section:not(.hero):not(.quote) {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #145c43;
+}
+
+#about p {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Mission Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    width: 270px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #25835c;
+    margin-bottom: 12px;
+}
+
+/* Quote Section */
+.quote {
+    background: #e5f3e9;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.quote h2 {
+    color: #145c43;
+}
+
+/* Footer */
+footer {
+    background: #145c43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
